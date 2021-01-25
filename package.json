@@ -1,0 +1,13 @@
+{
+  "name": "milambda1",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "serve": "netlify-lambda serve ./src",
+    "build": "netlify-lambda build ./src"
+  },
+  "author": "",
+  "license": "ISC"
+}
