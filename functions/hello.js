@@ -1,3 +1,4 @@
+require('dotenv').config();
 // src/hello.js
 exports.handler = function(
     event, // Netlify event
@@ -6,6 +7,6 @@ exports.handler = function(
   ) {
     callback(null, {
       statusCode: 200, // response status code
-      body: 'Hello, World' // response body
+      body: 'Hello, World '+process.env.DB // response body
     });
   };
