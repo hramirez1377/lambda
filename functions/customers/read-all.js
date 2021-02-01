@@ -21,7 +21,7 @@ exports.handler = async (event, context) => {
         // wellformedData includes customers id in the response.
         const wellformedData = ret.map(malformedResponse => {
           return {
-            id: malformedResponse.ts,
+            id: malformedResponse.ref.id,
             ...malformedResponse.data
           };
         });
